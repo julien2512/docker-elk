@@ -10,6 +10,7 @@ logstash:
   command: logstash -f /etc/logstash/conf.d/logstash.conf
   volumes:
     - ./logstash/config:/etc/logstash/conf.d
+#    - /var/www/reporting_international/data:/data
   ports:
     - "5000:5000"
   links:
